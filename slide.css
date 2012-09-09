@@ -1,0 +1,67 @@
+/*=======================================
+*#Last Update:		2010/8/30
+*#Version:			1.0
+*#Email:			minowu@foxmail.com
+*#Thanks:			http://www.sohtanaka.com
+=========================================*/
+
+/*--Main Container--*/
+.main_view {
+	float: left;
+	position: relative;
+}
+
+/*--Window/Masking Styles--*/
+.window {
+	width: 640px;
+	height: 450px;
+	overflow: hidden;
+	position: relative;
+}
+
+.image_reel {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.image_reel img {
+	float: left;
+	width: 640px;
+	/*height: 450px;*/
+	/*height: 350px;*/
+}
+
+/*--Paging Styles--*/
+.paging {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 130px;
+	height:32px;
+	z-index: 100;
+	text-align: center;
+	line-height: 32px;
+	background: #000;
+	display: none;
+	filter:alpha(opacity=65);
+	opacity: 0.65;
+	-moz-opacity:0.65;
+}
+
+.paging a {
+	padding: 2px 5px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.paging a.active {
+	font-weight: bold;
+	background: #333;
+	border: 1px solid #000;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+.paging a:hover { font-weight: bold; }
